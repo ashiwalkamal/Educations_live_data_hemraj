@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+	<androidx.drawerlayout.widget.DrawerLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="true"
+		tools:openDrawer="start"
+		android:id="@+id/drawer">
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:context=".Activity.MainActivity">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				tools:context=".activity.MainActivity">
+				<TabHost
+					android:id="@android:id/tabhost"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:orientation="vertical">
+						<FrameLayout
+							android:id="@android:id/tabcontent"
+							android:layout_width="fill_parent"
+							android:layout_height="0dip"
+							android:layout_weight="1" />
+						<View
+							android:layout_width="fill_parent"
+							android:layout_height="0.1dip"
+							android:layout_alignParentBottom="true"
+							android:background="#40000000"
+							android:paddingLeft="10.0dip"
+							android:paddingRight="10.0dip" />
+						<TabWidget
+							android:id="@android:id/tabs"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="0" />
+					</LinearLayout>
+				</TabHost>
+			</RelativeLayout>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

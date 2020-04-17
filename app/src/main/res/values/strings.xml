@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Gurukul</string>
+    <string name="register_form">Registration</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_course">Enter your Course</string>
+    <string name="enter_your_father_name">Enter your Father Name</string>
+    <string name="register">Register</string>
+    <string name="registration_successfull">Registration Successfull !</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="e_mail">E-mail</string>
+    <string name="batch_name">Batch Name</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="father_profession">Father Profession</string>
+    <string name="date">Date</string>
+    <string name="next">Next</string>
+    <string name="please_wait_while_we_take_you_back">Please wait while we take you back</string>
+    <string name="login">Login</string>
+    <string name="open">Open navigation</string>
+    <string name="close">Close navigation</string>
+    <string name="code_verify">Code Verify</string>
+    <string name="verify">Verify</string>
+    <string name="tittle">Tittle</string>
+    <string name="subjecttest">Subject Test</string>
+    <string name="weektest">Weekly Test</string>
+
+    <string name="reguired">required</string>
+    <string name="invalidemail">invalid email</string>
+    <string name="invalidno">invalid no</string>
+    <string name="logoutmsg">Do you want to logout</string>
+    <string name="yes">yes</string>
+    <string name="no">No</string>
+    <string name="nointernet">No internet connection found ! try again with internet connection</string>
+    <string name="password">Password</string>
+    <string name="conpassword">Confirm Paasword</string>
+    <string name="code">Signup code</string>
+    <string name="create">You are not register than click to register</string>
+    <string name="setting">Settings</string>
+    <string name="already">I have already account ?</string>
+    <string name="forgot">Forgot password ?</string>
+    <string name="newpassword">new password</string>
+    <string name="reset">Reset Password</string>
+    <string name="detail">Account Detail</string>
+    <string name="pick">User imag</string>
+    <string name="update">Update</string>
+    <string name="loginnnow">Login now</string>
+    <string name="coachingnme">Shivalay</string>
+    <string name="currnet">Current Batch</string>
+    <string name="upcomigtext">Live Exams</string>
+    <string name="activetest">Active Test</string>
+    <string name="seeabout">See Your about info</string>
+    <string name="testnme">Test Name</string>
+    <string name="testdte">Test Date</string>
+    <string name="answer">Select answer</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="totalqt">Total Question attempt:</string>
+    <string name="complete">Complete</string>
+    <array name="medium">
+        <item>Select Medium</item>
+        <item>Hindi Medium</item>
+        <item>English Medium</item>
+    </array>
+
+    <string name="mail_feedback_email">YourEmailAdress</string>
+    <string name="mail_feedback_subject">Feedback on your app</string>
+    <string name="mail_feedback_message">Hi,\n\nYour Feedback sample app rocks! I would like to give you some feedback:</string>
+    <string name="title_send_feedback">Send feedback</string>
+
+</resources>

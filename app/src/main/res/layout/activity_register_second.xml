@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".activity.RegisterSecond">
+
+        <ImageView
+            android:id="@+id/backsecond"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_back"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/register_form"
+            android:theme="@style/txtview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Spinner
+                android:id="@+id/spinmedium"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textdob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/date_of_birth"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bgedittext"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/text"
+            android:textColorHint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutone"
+            app:layout_constraintVertical_bias="0.061"
+            tools:layout_editor_absoluteX="0dp"
+            android:textColor="@color/colorWhite"/>
+
+
+        <EditText
+            android:id="@+id/editaddress"
+            android:layout_width="match_parent"
+            style="@style/editext"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:hint="@string/address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textdob"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"/>
+
+
+
+        <EditText
+            android:id="@+id/editemail"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:hint="@string/e_mail"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editaddress"
+            app:layout_constraintVertical_bias="0.061"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <EditText
+            style="@style/editext"
+            android:id="@+id/editbatch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:paddingLeft="20dp"
+            android:hint="@string/batch_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editemail"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnnexttwo"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editbatch"
+            app:layout_constraintVertical_bias="0.121"
+            tools:layout_editor_absoluteX="0dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:background="@drawable/bgedittext"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

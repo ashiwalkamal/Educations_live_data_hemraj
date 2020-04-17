@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            style="@style/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is 2+2 ?"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/searchengine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+
+            <RadioButton
+                android:id="@+id/b"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:text="22"/>
+
+                <RadioButton
+                    android:id="@+id/d"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+
+            </LinearLayout>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

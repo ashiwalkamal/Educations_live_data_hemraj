@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/qtiontest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/answerlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/optone"
+                    style="@style/descp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:padding="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:text="@string/answer" />
+
+
+
+                <RadioButton
+                    android:id="@+id/opttwo"
+                    style="@style/descp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="start|center"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/answer" />
+
+                <RadioButton
+                    android:id="@+id/optthree"
+                    style="@style/descp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/answer" />
+
+
+                <RadioButton
+                    android:id="@+id/optfour"
+                    style="@style/descp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/answer" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

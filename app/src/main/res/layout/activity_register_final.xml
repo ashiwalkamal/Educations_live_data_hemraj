@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.RegisterFinal">
+
+
+    <ImageView
+        android:id="@+id/backfinal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_back"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/register_form"
+        android:theme="@style/txtview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editCourse"
+        style="@style/editext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgedittext"
+        android:hint="@string/enter_your_course"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.061"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgedittext"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCourse"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Spinner
+            android:id="@+id/spincoaching"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/editwhichcourse"
+        style="@style/editext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgedittext"
+        android:hint="Course in which addmission is desired"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.061"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/editdate"
+        style="@style/editext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgedittext"
+        android:hint="@string/date"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editwhichcourse"
+        app:layout_constraintVertical_bias="0.061"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgedittext"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editdate"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Spinner
+            android:id="@+id/spinampm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnregister"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayouts"
+        app:layout_constraintVertical_bias="0.121"
+        tools:layout_editor_absoluteX="0dp"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:background="@drawable/bgedittext"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

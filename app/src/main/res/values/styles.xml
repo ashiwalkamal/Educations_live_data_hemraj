@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeOne" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="txtview" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+    <style name="title" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+    <style name="descp" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorlightgray</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+    <style name="txtview2" parent="Base.Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+    <style name="txtview1" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="abcd" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/avcd</item>
+    </style>
+
+    <style name="editext" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+
+    <style name="button" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/latoregular</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:fontFamily">@font/latoregular</item>
+        <item name="background">@drawable/editback</item>
+    </style>
+
+
+
+
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.Coaching_Details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".30"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/backimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical|center|bottom"
+                        android:layout_marginTop="20dp"
+                        app:civ_border_color="@color/colorBlack"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="2dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".70"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/txtview"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".40"
+                                android:padding="5dp"
+                                android:text="Coaching Name:"
+                                android:textColor="@color/colorOrange"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/coacnme"
+                                style="@style/txtview"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".60"
+                                android:padding="5dp"
+                                android:text="@string/coachingnme"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/txtview"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".40"
+                                android:padding="5dp"
+
+                                android:text="Contact:"
+                                android:textColor="@color/colorOrange"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/coachnumber"
+                                style="@style/txtview"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".60"
+                                android:onClick="call"
+                                android:padding="5dp"
+                                android:text="@string/phone_number"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/txtview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Address:"
+                                android:textColor="@color/colorOrange"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/coacaddress"
+                                style="@style/txtview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="direction"
+                                android:padding="5dp"
+                                android:text="@string/address"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/txtview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Aout us:"
+                                android:textColor="@color/colorOrange"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/aboutinfo"
+                                style="@style/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="@string/seeabout" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

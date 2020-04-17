@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <dimen name="text">16dp</dimen>
+ <dimen name="avcd">24dp</dimen>
+ <dimen name="text1">20dp</dimen>
+ <dimen name="text32">32dp</dimen>
+ <dimen name="text22">32dp</dimen>
+ <dimen name="text18">18dp</dimen>
+</resources>

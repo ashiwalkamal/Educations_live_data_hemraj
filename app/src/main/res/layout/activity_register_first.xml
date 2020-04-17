@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".activity.RegisterFirst">
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/register_form"
+            android:theme="@style/txtview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editname"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:hint="@string/enter_your_name"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/editfathername"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:hint="@string/enter_your_father_name"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editname"
+            app:layout_constraintVertical_bias="0.061"
+            tools:layout_editor_absoluteX="0dp"
+            android:inputType="text"/>
+
+
+
+        <EditText
+            android:id="@+id/editfatherprofession"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:hint="@string/father_profession"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editfathername"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editphone"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgedittext"
+            android:hint="@string/phone_number"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editfatherprofession"
+            app:layout_constraintVertical_bias="0.061"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+
+        <ImageView
+            android:id="@+id/Userimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_square"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editphone"
+            app:layout_constraintVertical_bias="0.318"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnnextone"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Userimage"
+            app:layout_constraintVertical_bias="0.320"
+            tools:layout_editor_absoluteX="0dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:background="@drawable/bgedittext"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
